@@ -1,5 +1,5 @@
 
-# Simple modal window
+# Simple modal form
 
 Simple modal window based on Vue and Vuex for adding custom content
 
@@ -45,11 +45,11 @@ export default new Vuex.Store({
 ## Using
 Once installed, it can be used in a template as simply as:
 ```vue
-<simple-modal-window :window-small="false">
+<simple-modal-form :window-small="false">
     <div class="my-class">
         Hellow, world!
     </div>
-</simple-modal-window>
+</simple-modal-form>
 ```
 ```vue
 <button @click="$store.commit('modal/CALL_MODAL', true)">
