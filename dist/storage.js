@@ -1,0 +1,1 @@
+const state={name:null},mutations={CALL_MODAL(t,a){t.name=a}};export default{namespaced:!0,state,mutations};
