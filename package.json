@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skydraco/npm-test.git"
+    "url": "git+https://github.com/skydraco/vue-simple-modal-form.git"
   },
   "author": "Denis",
   "license": "ISC",
