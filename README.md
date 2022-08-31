@@ -17,13 +17,10 @@ or using yarn
 ```
     
 ### Browser
-Include the script file, then install the component with Vue.use(SimpleModalWindow); e.g.:
+Include the script file, e.g.:
 ```html
 <script type="text/javascript" src="node_modules/vuejs/dist/vue.min.js"></script>
-<script type="text/javascript" src="node_modules/vue-simple-modal-form/dist/plugin.js"></script>
-<script type="text/javascript">
-    Vue.use(SimpleModalForm);
-</script>
+<script type="text/javascript" src="node_modules/vue-simple-modal-form/dist/plugin.min.js"></script>
 ```
 ### Module
 ```js

@@ -56,18 +56,18 @@ module.exports = [
     merge(config, {
       entry: path.resolve(__dirname + '/src/plugin.js'),
       output: {
-        filename: 'plugin.js',
+        filename: 'plugin.min.js',
         libraryTarget: 'window',
-        library: 'Modal'
+        library: 'SimpleModalForm'
       }
     }),
     merge(config, {
-      entry: path.resolve(__dirname + '/src/Modal.vue'),
-      output: {
-        filename: 'index.js',
-        libraryTarget: 'umd',
-        umdNamedDefine: true,
-        library: 'Modal'
-      }
+        entry: path.resolve(__dirname + '/src/plugin.js'),
+        output: {
+            filename: 'index.min.js',
+            libraryTarget: 'umd',
+            umdNamedDefine: true,
+            library: 'SimpleModalForm'
+        }
     }),
 ];

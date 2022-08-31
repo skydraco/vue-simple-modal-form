@@ -1,10 +1,16 @@
-import Vue from 'vue'
-import SimpleModalForm from './Modal.vue';
+import Modal from './Modal.vue';
 
-module.exports = {
+const SimpleModalForm = {
   install: function (Vue, options) {
-    Vue.component('simple-modal-form', SimpleModalForm);
+    // Let's register our component globally
+    // https://vuejs.org/v2/guide/components-registration.html
+    Vue.component('simple-modal-form', Modal);
   }
 };
 
-export default SimpleModalForm
+// Automatic installation if Vue has been added to the global scope.
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(SimpleModalForm);
+}
+
+export default Modal;
